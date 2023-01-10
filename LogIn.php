@@ -5,7 +5,7 @@
 <?php
 include ("config.php");
 
-$sql = "SELECT * from client WHERE Email='".$_POST["Email"]."' and Password='".$_POST["Password"]."'";
+$sql = "SELECT * from user WHERE Email='".$_POST["Email"]."' and Password='".$_POST["Password"]."'";
 // echo $sql."<br>";
 
 //$sql="SELECT * from clienti WHERE id_client=2";

@@ -158,7 +158,7 @@
     margin: auto;
     background-color:white;
     width: 60%;
-    height: 250px;
+    height: 300px;
    }
 
    .login_text{
@@ -166,6 +166,17 @@
     font-size: 20px;
     color: black;
    }
+.signup{
+    text-align: center;
+}
 
+.button1 {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
 
     

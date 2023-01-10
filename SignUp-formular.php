@@ -38,17 +38,15 @@
 <br><br><br>
 <div class="divLogIn">
 
-    <h2 class="headLogIn">Log In</h2>
+    <h2 class="headLogIn">SIGN UP</h2>
 
-    <div class="divLogIn1"><form action="LogIn.php" method="POST">
-  <div class="divLogIn2"><br><br><p class="login_text"><b> Email</b> <br> <input type="text" name="Email"></p> 
-                                <p class="login_text"><b> Password </b><br> <input type="text" name="Password"></p>
+    <div class="divLogIn1"><form action="SignUp.php" method="POST">
+  <div class="divLogIn2"><br><br><p class="login_text"><b>Email</b> <br> <input type="text" name="Email"></p> 
+                                <p class="login_text"><b>Password</b><br> <input type="text" name="Password"></p>
 
    <p class="login_text"><input type="reset" value="CANCEL">
-   <input type="submit" value="LOGIN"></p>
-   <p class="signup">You dont have an account?</p>
-   <p class="signup"><a href="http://localhost/Maga/SignUp-formular.php" class="button">SIGNUP</a></p></div>
-  <!-- <p class="signup"> <input type="submit" value="SINGUP"></p> -->
+   <input type="submit" value="SIGNUP"></div></p>
+   
 </form></div>
 </div>
 

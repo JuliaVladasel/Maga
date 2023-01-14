@@ -10,8 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body style="background-color:white">
+
+
+
 
 <hr width="100%" 
     size="15" 
@@ -29,30 +34,26 @@
         <li><a href="#">Rings</a></li>
         <li><a href="#">Accesories</a></li>
         <li><a href="About.php">About us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="Contact.php">Contact</a></li>
         <li><button class="btn"><i class="fa fa-cart-arrow-down"></i></button></li>
-        <li>><a href="LogIn-formular.php"><button class="btn"><i class="	fa fa-user-circle-o"></i></button></a></li>
+        <li><a href="LogIn-formular.php"><button class="btn"><i class="	fa fa-user-circle-o"></i></button></a></li>
     </ul>
 </div>
+<br>
+<hr width="100%" 
+    size="15" 
+    align="center"
+    color="#5e154e"
+</hr>
+<p class="contact_text">CONTACT</p>
+<!-- <table>
+    <tr>
+        <td><img src="imagini/poza_femeie4.jpg"></td>
+        <td class="contact_text1"><b>Telefon:</b><br>0754738474<br><b>Email:</b><br>JuJewellery@yahoo.com</td>
+    </tr>
+</table> -->
 
-<br><br><br>
-<div class="divLogIn">
-
-    <h2 class="headLogIn">SIGN UP</h2>
-
-    <div class="divLogIn1"><form action="SignUp.php" method="POST">
-  <div class="divLogIn2"><br><br><p class="login_text"><b>Email</b> <br> <input type="text" name="Email"></p> 
-                                <p class="login_text"><b>Password</b><br> <input type="text" name="Password"></p>
-
-   <p class="login_text"><input type="reset" value="CANCEL">
-   <input type="submit" value="SIGNUP"></div></p>
-   
-</form></div>
-</div>
-
-
-
-
+<div class=divContact><img src="imagini/banner_contact.jpg"></div>
 
 
 </body>

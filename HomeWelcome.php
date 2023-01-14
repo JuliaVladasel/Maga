@@ -28,12 +28,12 @@
 
 <div class="navbar">
     <ul>
-        <li><a href="http://localhost/Maga/Home.php">Home</a></li>
+        <li><a href="Home.php">Home</a></li>
         <li><a href="#">Bracelets</a></li>
         <li><a href="#">Necklaces</a></li>
         <li><a href="#">Rings</a></li>
         <li><a href="#">Accesories</a></li>
-        <li><a href="http://localhost/Maga/About.php">About us</a></li>
+        <li><a href="About.php">About us</a></li>
         <li><a href="#">Contact</a></li>
         <li><button class="btn"><i class="fa fa-cart-arrow-down"></i></button></li>
         <li><a href="#">Bine ai venit!</a></li>

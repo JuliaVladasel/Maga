@@ -23,15 +23,15 @@
 
 <div class="navbar">
     <ul>
-        <li><a href="http://localhost/Maga/Home.php">Home</a></li>
+        <li><a href="Home.php">Home</a></li>
         <li><a href="#">Bracelets</a></li>
         <li><a href="#">Necklaces</a></li>
         <li><a href="#">Rings</a></li>
         <li><a href="#">Accesories</a></li>
-        <li><a href="http://localhost/Maga/About.php">About us</a></li>
+        <li><a href="About.php">About us</a></li>
         <li><a href="#">Contact</a></li>
         <li><button class="btn"><i class="fa fa-cart-arrow-down"></i></button></li>
-        <li>><a href="http://localhost/Maga/LogIn-formular.php"><button class="btn"><i class="	fa fa-user-circle-o"></i></button></a></li>
+        <li>><a href="LogIn-formular.php"><button class="btn"><i class="	fa fa-user-circle-o"></i></button></a></li>
     </ul>
 </div>
 
@@ -47,8 +47,8 @@
    <p class="login_text"><input type="reset" value="CANCEL">
    <input type="submit" value="LOGIN"></p>
    <p class="signup">You dont have an account?</p>
-   <p class="signup"><a href="http://localhost/Maga/SignUp-formular.php" class="button">SIGNUP</a></p></div>
-  <!-- <p class="signup"> <input type="submit" value="SINGUP"></p> -->
+   <p class="signup"><a href="SignUp-formular.php" class="button">SIGNUP</a></p></div>
+  
 </form></div>
 </div>
 

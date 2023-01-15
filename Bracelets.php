@@ -29,10 +29,10 @@
 <div class="navbar">
     <ul>
         <li><a href="Home.php">Home</a></li>
-        <li><a href="#">Bracelets</a></li>
-        <li><a href="#">Necklaces</a></li>
-        <li><a href="#">Rings</a></li>
-        <li><a href="#">Accesories</a></li>
+        <li><a href="Bracelets.php">Bracelets</a></li>
+        <li><a href="Necklace.php">Necklaces</a></li>
+        <li><a href="Rings.php">Rings</a></li>
+        <li><a href="Accesories.php">Accesories</a></li>
         <li><a href="About.php">About us</a></li>
         <li><a href="Contact.php">Contact</a></li>
         <li><button class="btn"><i class="fa fa-cart-arrow-down"></i></button></li>
@@ -41,69 +41,33 @@
 </div>
 
 <table>
-    <tr>
-        <td><?php include "config.php";
-                $sql = "SELECT Image FROM jewel WHERE jewel_id=1000";
+    
+    <tbody>
+            <?php include "config.php";
+                $sql = "SELECT Image, Name, Price FROM jewel Where Category_Id=300";
                 $result = $conn->query($sql);
-
+                
                 if ($result->num_rows > 0) {
-                // output data of each row
+                // output data of each row            
                     while($row = $result->fetch_assoc()) {
-                     echo '<img src="data:image/png;base64,'.base64_encode($row["Image"]).'"/>';
-                 }
+                        //echo '<tr class="product-item">';
+                            echo '<td><img class="product-image" src="data:image/png;base64,'.base64_encode($row["Image"]).'"/></td>';
+                            echo '<td class="product-title">'.$row["Name"].'</td>';
+                            echo '<td class="product-price">'.$row["Price"].'</td>';
+                            
+                       // echo '</tr>';
+                    }   
                 } else {
                      echo "0 results";
                 }
 
                 $conn->close();
-            ?></td>
-            <td><h1>Tennis Bracelet</h1><br><h1>Price:</h1><?php include "config.php";
-                                                $sql = "SELECT Price FROM jewel WHERE jewel_id=1000";
-                                                $result = $conn->query($sql);
-
-                                                if ($result->num_rows > 0) {
-                                                 // output data of each row
-                                                     while($row = $result->fetch_assoc()) {
-                                                             echo $row["Price"] ;
-                                                      }
-                                                } else {
-                                                          echo "0 results";
-                                                        }
-
-                                                $conn->close();
-                ?>
-                </td>
-                <td><?php include "config.php";
-                $sql = "SELECT Image FROM jewel WHERE jewel_id=1001";
-                $result = $conn->query($sql);
-
-                if ($result->num_rows > 0) {
-                // output data of each row
-                    while($row = $result->fetch_assoc()) {
-                     echo '<img src="data:image/png;base64,'.base64_encode($row["Image"]).'"/>';
-                 }
-                } else {
-                     echo "0 results";
-                }
-
-                $conn->close();
-            ?></td>
-             <td><h1>Tennis Bracelet</h1><br><h1>Price:</h1><?php include "config.php";
-                                                $sql = "SELECT Price FROM jewel WHERE jewel_id=1000";
-                                                $result = $conn->query($sql);
-
-                                                if ($result->num_rows > 0) {
-                                                 // output data of each row
-                                                     while($row = $result->fetch_assoc()) {
-                                                             echo $row["Price"] ;
-                                                      }
-                                                } else {
-                                                          echo "0 results";
-                                                        }
-
-                                                $conn->close();
-                ?>
-                </td>
+            ?>
+    </tbody>
+     
+</table>
+            
+          
 
 </body>
 </html>

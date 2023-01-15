@@ -40,42 +40,34 @@
     </ul>
 </div>
 
-<div class="container">
-<div class="swiper">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="imagini/poza1.jpg"></div>
-      <div class="swiper-slide"><img src="imagini/poza2.jpg"></div>
-      <div class="swiper-slide"><img src="imagini/poza3.jpg"></div>
-      <div class="swiper-slide"><img src="imagini/poza4.jpg"></div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+<table>
+    
+    <tbody>
+            <?php include "config.php";
+                $sql = "SELECT Image, Name, Price FROM jewel Where Category_Id=303";
+                $result = $conn->query($sql);
+                
+                if ($result->num_rows > 0) {
+                // output data of each row            
+                    while($row = $result->fetch_assoc()) {
+                        //echo '<tr class="product-item">';
+                            echo '<td><img class="product-image" src="data:image/png;base64,'.base64_encode($row["Image"]).'"/></td>';
+                            echo '<td class="product-title">'.$row["Name"].'</td>';
+                            echo '<td class="product-price">'.$row["Price"].'</td>';
+                            
+                       // echo '</tr>';
+                    }   
+                } else {
+                     echo "0 results";
+                }
 
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>
- const swiper = new Swiper('.swiper', {
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-</script>
-<br><br><br><br>
-<div class="div1"><img src="imagini/poza_femeie.jpg" class="poza1">
-  <img src="imagini/text.jpg" class="poza3">
-  <img src="imagini/poza_femeie1.jpg" class="poza2">
-</div>
-
-
-
-
-
-
+                $conn->close();
+            ?>
+    </tbody>
+     
+</table>
+            
+          
 
 </body>
 </html>

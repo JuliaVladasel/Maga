@@ -17,7 +17,8 @@ if ($result->num_rows > 0) {
         exit();
     }
 } else {
-    header("Location:http:LogIn-formular.php");
+    header("Location:
+    LogIn-formular.php");
     
 
     

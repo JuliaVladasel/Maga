@@ -197,7 +197,8 @@
     }
 
 
-table{border:1px solid black;}
+table{
+width: 100%;}
 
 h1{color:#085929;
         font-size:20px;
@@ -209,7 +210,11 @@ h1{color:#085929;
 
 .div_image_product{
     background-color: black;
-   height: 10px;
+   height: 102px;
 
 
+}
+
+.td_bratari{
+    display: block;
 }

@@ -24,12 +24,12 @@
 <div class="navbar">
     <ul>
         <li><a href="Home.php">Home</a></li>
-        <li><a href="#">Bracelets</a></li>
-        <li><a href="#">Necklaces</a></li>
-        <li><a href="#">Rings</a></li>
-        <li><a href="#">Accesories</a></li>
+        <li><a href="Bracelets.php">Bracelets</a></li>
+        <li><a href="Necklace.php">Necklaces</a></li>
+        <li><a href="Rings.php">Rings</a></li>
+        <li><a href="Accesories.php">Accesories</a></li>
         <li><a href="About.php">About us</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="Contact.php">Contact</a></li>
         <li><button class="btn"><i class="fa fa-cart-arrow-down"></i></button></li>
         <li>><a href="LogIn-formular.php"><button class="btn"><i class="	fa fa-user-circle-o"></i></button></a></li>
     </ul>

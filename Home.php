@@ -55,6 +55,7 @@
   </div>
 </div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
  const swiper = new Swiper('.swiper', {
@@ -65,7 +66,7 @@
   },
 });
 </script>
-<br><br><br><br>
+<br><br><br><br><br><br><br>
 <div class="div1"><img src="imagini/poza_femeie.jpg" class="poza1">
   <img src="imagini/text.jpg" class="poza3">
   <img src="imagini/poza_femeie1.jpg" class="poza2">

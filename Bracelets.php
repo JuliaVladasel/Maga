@@ -40,32 +40,34 @@
     </ul>
 </div>
 
-<table>
-    
-    <tbody>
-            <?php include "config.php";
-                $sql = "SELECT Image, Name, Price FROM jewel Where Category_Id=300";
-                $result = $conn->query($sql);
-                
-                if ($result->num_rows > 0) {
-                // output data of each row            
-                    while($row = $result->fetch_assoc()) {
-                        //echo '<tr class="product-item">';
-                            echo '<td><img class="product-image" src="data:image/png;base64,'.base64_encode($row["Image"]).'"/></td>';
-                            echo '<td class="product-title">'.$row["Name"].'</td>';
-                            echo '<td class="product-price">'.$row["Price"].'</td>';
-                            
-                       // echo '</tr>';
-                    }   
-                } else {
-                     echo "0 results";
-                }
 
-                $conn->close();
-            ?>
-    </tbody>
+    
+<?php include "config.php";
+     $sql = "SELECT Image, Name, Price FROM jewel Where Category_Id=300";
+    $result = $conn->query($sql);
+    $count=0;
+    echo '<table>';   
+    echo '<tr>'; 
+    while($row = $result->fetch_assoc()) {
+                       
+        echo '<td><img class="product-image" src="data:image/png;base64,'.base64_encode($row["Image"]).'"/></td>';
+        echo '<td class="product-title">'.$row["Name"].'</td>';
+        echo '<td class="product-price">'.$row["Price"].'</td>';
+         $count++;
+        if($count%2==0)
+             {
+                 echo'</tr>';
+                 echo'<tr>';
+            }
+                       
+    }   
+echo'</tr>';
+echo'</table>';
+
+$conn->close();
+?>
+    
      
-</table>
             
           
 
